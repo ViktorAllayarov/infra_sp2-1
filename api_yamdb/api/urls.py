@@ -8,14 +8,9 @@ from api.v1.views import (
     TitleViewSet,
     ReviewsViewSet,
     CommentViewSet,
-)
-from api.v1.views import (
-    CategoryViewSet,
-    GenreViewSet,
-    TitleViewSet,
     get_token,
     sign_up,
-    UsersViewSet
+    UsersViewSet,
 )
 
 

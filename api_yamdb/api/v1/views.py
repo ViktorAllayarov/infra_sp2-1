@@ -10,13 +10,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes, action
 
 from .filters import TitleFilter
-from .serializers import (
-    CategorySerializer,
-    GenreSerializer,
-    TitleSerializer,
-    ReviewSerializer,
-    CommentSerializer
-)
 from reviews.models import Category, Genre, Title, Review, User
 from .permissions import (
     IsOwnerAdminModeratorOrReadOnly,
@@ -27,6 +20,8 @@ from .serializers import (
     CategorySerializer,
     GenreSerializer,
     TitleSerializer,
+    ReviewSerializer,
+    CommentSerializer,
     TitleSerializerRead,
     GetJWTSerializer,
     SignUpSerializer,
